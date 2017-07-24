@@ -1,88 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Interview Prep</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+
 <body>
-    <p>What is React?</p>
-    <p>Differentiate React vs other frameworks?</p>
-    <p>What is component lifecycle?</p>
-    <ul>
-        <li>Explain High-Level component lifecycle?</li>
-    </ul>
-    <ol>
-        <li>Initialization</li>
-        <li>State/Property Updates</li>
-        <li>Destruction</li>
-    </ol>
-    <ul>
-        <li>Explain low-level component lifecycle?</li>
-    </ul>
-    <p>What is JSX?</p>
-    <p>What is Flux?</p>
-    <ul>
-        <li>Flux is an architectural pattern that enforces unidirectional data flow &mdash;&nbsp;its core purpose is to control derived data so that multiple components can interact with that data without risking pollution.</li>
-        <li>The strict unidirectional flow of this Flux pattern enforces data stability, reducing data-related runtime errors throughout an application.</li>
-    </ul>
-    <p>Pros of Flux:</p>
-    <ol>
-        <li>Poorly defined data flow can be easily controlled by store.</li>
-        <li>Lack of data integrity &ndash; enforced by restricting direct access to shared data.</li>
-    </ol>
-    <p>What are stateless components?</p>
-    <ul>
-        <li>These are pure functions that render DOM based on properties</li>
-    </ul>
-    <p>What is setState?</p>
-    <p>What is forceUpdate?</p>
-    <p>setState vs forceUpdate?</p>
-    <p>Element vs Component?</p>
-    <ul>
-        <li>Element: simple UI</li>
-        <li>Component: function or class that accepts input and returns UI</li>
-    </ul>
-    <p>Class component vs functional component?</p>
-    <ul>
-        <li>Class component has state or lifecycle methods</li>
-        <li>Functional components: simple render the assigned function</li>
-    </ul>
-    <p>Refs?</p>
-    <ul>
-        <li>Used to access DOM elements or instance of a component</li>
-        <li>Can be used to maintain uncontrolled componets</li>
-    </ul>
-    <p>Keys?</p>
-    <ul>
-        <li>Keys are the way of tracking data in react. Suggested to have unique keys for all the data.</li>
-    </ul>
-    <p>Controlled vs uncontrolled components?</p>
-    <ul>
-        <li>Controlled: is in control &ndash; can be manipulated as needed</li>
-        <li>Uncontrolled: simply renders DOM data</li>
-    </ul>
-    <p>Where are AJAX calls placed in react lifecycle?</p>
-    <ul>
-        <li>Inside of componentDidMount event</li>
-    </ul>
-    <p>When to use shouldCompoentUpdate?</p>
-    <ul>
-        <li>Can be used to opt out of any process and update the UI as needed.</li>
-    </ul>
-    <p>How to set production build in react?</p>
-    <ul>
-        <li>Set NODE_ENV to production &ndash; this will avoid proptype validation errors and other warnings.</li>
-    </ul>
-    <p>How to get data from state?</p>
-    <p>Define state?</p>
-    <p>Thunk vs sagas?</p>
-    <p>Is redux a framework or library?</p>
-    <p>What are middlewares?</p>
-    <p>Explain the process of unit testing?</p>
-    <p>What is describe, it, assert?</p>
-    <p>How are promises handled?</p>
-    <p>What are promises?</p>
-    <p>What is a callback?</p>
-    <p>What is callbackhell?</p>
-    <p>What is setTimeOut?</p>
-    <p>what happens when a promise is failed?</p>
-    <p>Explain the life cycle of an action?</p>
-    <p>What is a Reducer?</p>
-    <p>Explain Routing?</p>
-    <p>How does data flow in reducers?</p>
-    <p>Where are middlewares placed in a lifecycle of action?</p>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+                <a class="navbar-brand" href="#">Interview Prep</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">JavaScript</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">JS Frameworks <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li class="active"><a href="react.html">React</a></li>
+                            <li><a href="#">Angular</a></li>
+                            <li><a href="#">Node</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Java</a></li>
+                    <li><a href="#">Android</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <p>What is React?</p>
+        <p>Differentiate React vs other frameworks?</p>
+        <p>What is component lifecycle?</p>
+        <ul>
+            <li>Explain High-Level component lifecycle?</li>
+        </ul>
+        <ol>
+            <li>Initialization</li>
+            <li>State/Property Updates</li>
+            <li>Destruction</li>
+        </ol>
+        <ul>
+            <li>Explain low-level component lifecycle?</li>
+        </ul>
+        <p>What is JSX?</p>
+        <p>What is Flux?</p>
+        <ul>
+            <li>Flux is an architectural pattern that enforces unidirectional data flow &mdash;&nbsp;its core purpose is to control derived data so that multiple components can interact with that data without risking pollution.</li>
+            <li>The strict unidirectional flow of this Flux pattern enforces data stability, reducing data-related runtime errors throughout an application.</li>
+        </ul>
+        <p>Pros of Flux:</p>
+        <ol>
+            <li>Poorly defined data flow can be easily controlled by store.</li>
+            <li>Lack of data integrity &ndash; enforced by restricting direct access to shared data.</li>
+        </ol>
+        <p>What are stateless components?</p>
+        <ul>
+            <li>These are pure functions that render DOM based on properties</li>
+        </ul>
+        <p>What is setState?</p>
+        <p>What is forceUpdate?</p>
+        <p>setState vs forceUpdate?</p>
+        <p>Element vs Component?</p>
+        <ul>
+            <li>Element: simple UI</li>
+            <li>Component: function or class that accepts input and returns UI</li>
+        </ul>
+        <p>Class component vs functional component?</p>
+        <ul>
+            <li>Class component has state or lifecycle methods</li>
+            <li>Functional components: simple render the assigned function</li>
+        </ul>
+        <p>Refs?</p>
+        <ul>
+            <li>Used to access DOM elements or instance of a component</li>
+            <li>Can be used to maintain uncontrolled componets</li>
+        </ul>
+        <p>Keys?</p>
+        <ul>
+            <li>Keys are the way of tracking data in react. Suggested to have unique keys for all the data.</li>
+        </ul>
+        <p>Controlled vs uncontrolled components?</p>
+        <ul>
+            <li>Controlled: is in control &ndash; can be manipulated as needed</li>
+            <li>Uncontrolled: simply renders DOM data</li>
+        </ul>
+        <p>Where are AJAX calls placed in react lifecycle?</p>
+        <ul>
+            <li>Inside of componentDidMount event</li>
+        </ul>
+        <p>When to use shouldCompoentUpdate?</p>
+        <ul>
+            <li>Can be used to opt out of any process and update the UI as needed.</li>
+        </ul>
+        <p>How to set production build in react?</p>
+        <ul>
+            <li>Set NODE_ENV to production &ndash; this will avoid proptype validation errors and other warnings.</li>
+        </ul>
+        <p>How to get data from state?</p>
+        <p>Define state?</p>
+        <p>Thunk vs sagas?</p>
+        <p>Is redux a framework or library?</p>
+        <p>What are middlewares?</p>
+        <p>Explain the process of unit testing?</p>
+        <p>What is describe, it, assert?</p>
+        <p>How are promises handled?</p>
+        <p>What are promises?</p>
+        <p>What is a callback?</p>
+        <p>What is callbackhell?</p>
+        <p>What is setTimeOut?</p>
+        <p>what happens when a promise is failed?</p>
+        <p>Explain the life cycle of an action?</p>
+        <p>What is a Reducer?</p>
+        <p>Explain Routing?</p>
+        <p>How does data flow in reducers?</p>
+        <p>Where are middlewares placed in a lifecycle of action?</p>
+    </div>
 </body>
+
+</html>
